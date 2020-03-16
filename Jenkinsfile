@@ -5,7 +5,4 @@ node ('C'){
     stage ('MVN'){
         sh 'mvn clean'
     }
-    stage ('mail'){
-	mail body: 'Success', subject: 'Build State', to: 'nagarjunamukku@gmail.com'
-    }
 }
