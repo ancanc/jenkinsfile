@@ -6,6 +6,6 @@ node ('C'){
         sh 'mvn clean'
     }
     stage ('mail'){
-	mail body: 'Success', to: 'nagarjunamukku@gmail.com'
+	mail body: 'Success', subject: 'Build State', to: 'nagarjunamukku@gmail.com'
     }
 }
